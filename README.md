@@ -47,13 +47,29 @@ Go to **Settings → Theme → Terminal Synthwave** to tweak:
 
 ## Development
 
-Edit `theme.css` in this repo, then run:
+Edit `theme.css` in this repo. The watcher copies changes to your dev vault automatically.
+
+**First-time setup (run once):**
+
+```powershell
+.\install-hotreload.ps1
+```
+
+**Start the live sync watcher:**
 
 ```powershell
 .\start-dev.ps1
 ```
 
-This watches for changes and syncs to all configured vaults via `sync.ps1`.
+Or run hidden (no terminal window): double-click `start_hidden.vbs`, or add a shortcut to it in `shell:startup` for auto-start on boot.
+
+**Manual sync:**
+
+```powershell
+.\sync.ps1
+```
+
+**Flow:** Edit `theme.css` → Save → `chokidar` detects change → `sync.ps1` copies to `.obsidian/themes/Terminal Synthwave/` → Hot Reload refreshes Obsidian.
 
 ## License
 
