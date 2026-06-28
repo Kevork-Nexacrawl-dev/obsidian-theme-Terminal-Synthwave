@@ -1,0 +1,8 @@
+{
+  "name": "Terminal Synthwave",
+  "version": "1.0.0",
+  "minAppVersion": "0.16.0",
+  "author": "Kevork @ Nexacrawl",
+  "authorUrl": "https://github.com/Kevork-Nexacrawl-dev",
+  "modes": ["dark"]
+}
